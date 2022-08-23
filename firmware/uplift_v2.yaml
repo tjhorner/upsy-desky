@@ -1,0 +1,19 @@
+packages:
+  base_config: !include _base.yaml
+
+dashboard_import:
+  package_import_url: github://tjhorner/upsy-desky/firmware/uplift_v2.yaml
+
+substitutions:
+  standing_desk_uart_rx_pin: "17"
+  standing_desk_up_pin: "21"
+  standing_desk_down_pin: "22"
+  standing_desk_variant: "uplift"
+  standing_desk_min_height: "25.2"
+  standing_desk_max_height: "50.8"
+
+  # Presets
+  button_bit1_pin: "21"
+  button_bit2_pin: "22"
+  button_bit4_pin: "19"
+  button_m_pin: "18"
