@@ -1,4 +1,4 @@
-# Upsy Desky
+# Upsy Desky <img src="https://user-images.githubusercontent.com/2646487/186949382-4a173c5d-bfba-4284-a676-22c7121c7456.png" width="150" align="right">
 
 This repository contains the source files for the Upsy Desky, a device which lets you connect your standing desk to any home automation system.
 
