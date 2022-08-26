@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "A-2004-2-4-LPS-N-R")(type "Legacy")(uri "${KIPRJMOD}/symbols/A-2004-2-4-LPS-N-R.lib")(options "")(descr ""))
+)

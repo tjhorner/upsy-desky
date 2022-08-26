@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# A-2004-2-4-LPS-N-R
+#
+DEF A-2004-2-4-LPS-N-R J 0 40 Y Y 1 L N
+F0 "J" -200 550 50 H V L BNN
+F1 "A-2004-2-4-LPS-N-R" -200 -750 50 H V L BNN
+F2 "ASSMANN_A-2004-2-4-LPS-N-R" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Assmann WSW Components" 0 0 50 H I L BNN "MANUFACTURER"
+F5 "Manufacturer recommendations" 0 0 50 H I L BNN "STANDARD"
+F6 "13.4mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F7 "00" 0 0 50 H I L BNN "PARTREV"
+DRAW
+P 2 0 0 10 -200 -580 -200 -620 N
+P 2 0 0 10 -200 500 -200 -700 N
+P 2 0 0 10 -200 -700 200 -700 N
+P 2 0 0 10 200 -700 200 500 N
+P 2 0 0 10 200 500 -200 500 N
+X 1 1 -400 400 200 R 40 40 0 0 P 
+X 2 2 -400 300 200 R 40 40 0 0 P 
+X 3 3 -400 200 200 R 40 40 0 0 P 
+X 4 4 -400 100 200 R 40 40 0 0 P 
+X 5 5 -400 0 200 R 40 40 0 0 P 
+X 6 6 -400 -100 200 R 40 40 0 0 P 
+X 7 7 -400 -200 200 R 40 40 0 0 P 
+X 8 8 -400 -300 200 R 40 40 0 0 P 
+X SHIELD S1 -400 -500 200 R 40 40 0 0 P 
+X SHIELD__1 S2 -400 -600 200 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
