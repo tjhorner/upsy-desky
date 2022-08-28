@@ -27,7 +27,8 @@ jobs:
         run: |
           esphome compile ${{ matrix.desk_brand }}.yaml
           mkdir -p bin
-          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware-factory.bin bin/stock-${{ matrix.desk_brand }}.bin
+          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware-factory.bin bin/firmware-factory-${{ matrix.desk_brand }}.bin
+          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware-factory.bin bin/firmware-${{ matrix.desk_brand }}.bin
 
       - name: Upload Firmware
         uses: skx/github-action-publish-binaries@release-1.3
