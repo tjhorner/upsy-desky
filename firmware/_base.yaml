@@ -1,9 +1,12 @@
+substitutions:
+  name: "upsy-desky"
+
 esphome:
-  name: upsy-desky
+  name: "${name}"
   name_add_mac_suffix: true
   project:
     name: tj_horner.upsy_desky
-    version: "0.0.1"
+    version: "0.0.2"
 
 esp32:
   board: esp32dev
