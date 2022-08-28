@@ -6,7 +6,7 @@ esphome:
   name_add_mac_suffix: true
   project:
     name: tj_horner.upsy_desky
-    version: "0.0.2"
+    version: "0.0.3"
 
 esp32:
   board: esp32dev
