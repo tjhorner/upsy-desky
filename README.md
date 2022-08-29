@@ -23,6 +23,7 @@ With these you can make your own Upsy Desky from scratch, or you can make change
 This is the successor to the [WiFi Standing Desk Controller](https://github.com/tjhorner/wifi-desk-controller), packed with improvements and bug fixes — most notably:
 
 - USB-C port for easy flashing (and because USB-C is cool 😎)
+- Runtime firmware configuration -- no more manual flashing or compiling ESPHome to change stuff
 - Improved enclosure design with a more snug fit and screw-mounted PCB, allowing for easier repairs and troubleshooting
 - Replacing the D1 Mini with an ESP32-WROOM module, providing hardware UART for more reliable desk connection
 - A catchier name, because "WiFi Standing Desk Controller" was a mouthful
