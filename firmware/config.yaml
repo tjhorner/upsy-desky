@@ -1,0 +1,132 @@
+substitutions:
+  name: "upsy-desky"
+  friendly_name: "Upsy Desky"
+
+  # Defaults
+  standing_desk_uart_rx_pin: "17"
+  standing_desk_up_pin: "21"
+  standing_desk_down_pin: "22"
+  standing_desk_variant: "uplift"
+  standing_desk_min_height: "25.2"
+  standing_desk_max_height: "50.8"
+
+  # Presets
+  button_bit1_pin: "21"
+  button_bit2_pin: "22"
+  button_bit4_pin: "19"
+  button_m_pin: "18"
+
+esphome:
+  name: "${name}"
+  name_add_mac_suffix: true
+  on_boot:
+    then:
+      # Wakes up the desk and reports height
+      - uart.write:
+          id: handset_tx
+          data: [ 0x0 ]
+  project:
+    name: tj_horner.upsy_desky
+    version: "0.1.0"
+
+dashboard_import:
+  package_import_url: github://tjhorner/upsy-desky/firmware/config.yaml
+
+uart:
+  id: handset_tx
+  tx_pin: 16
+  baud_rate: 9600
+
+esp32:
+  board: esp32dev
+
+logger:
+  level: INFO
+
+wifi:
+  ap:
+    password: "hunter2hunter2"
+
+captive_portal:
+
+improv_serial:
+
+api:
+  password: ""
+  reboot_timeout: 0s
+
+web_server:
+  port: 80
+
+ota:
+  password: ""
+
+packages:
+  standing_desk: github://tjhorner/esphome-standing-desk/configs/template.yaml
+  presets_addon: github://tjhorner/esphome-standing-desk/configs/addons/presets.yaml
+
+select:
+  - platform: template
+    name: "${friendly_name} Height Decoder Variant"
+    entity_category: "config"
+    optimistic: true
+    restore_value: true
+    options:
+      - uplift
+      - jarvis
+    initial_option: ${standing_desk_variant}
+    on_value:
+      then:
+        lambda: "id(desk_height)->set_decoder_variant(x);"
+  - platform: template
+    name: "${friendly_name} Height Units"
+    entity_category: "config"
+    optimistic: true
+    restore_value: true
+    options:
+      - in
+      - cm
+    initial_option: in
+    on_value:
+      then:
+        lambda: |
+          id(desk_height)->set_unit_of_measurement(x);
+          id(target_desk_height)->traits.set_unit_of_measurement(x);
+
+number:
+  - platform: template
+    name: "${friendly_name} Min Target Height"
+    entity_category: "config"
+    min_value: 0
+    max_value: 150
+    step: 0.1
+    optimistic: true
+    restore_value: true
+    initial_value: ${standing_desk_min_height}
+    on_value:
+      then:
+        lambda: |
+          id(target_desk_height)->traits.set_min_value(x);
+  - platform: template
+    name: "${friendly_name} Max Target Height"
+    entity_category: "config"
+    min_value: 0
+    max_value: 150
+    step: 0.1
+    optimistic: true
+    restore_value: true
+    initial_value: ${standing_desk_max_height}
+    on_value:
+      then:
+        lambda: |
+          id(target_desk_height)->traits.set_max_value(x);
+
+switch:
+  - platform: restart
+    name: "${friendly_name} Restart"
+
+light:
+  - platform: status_led
+    id: status
+    pin: GPIO23
+    restore_mode: ALWAYS_ON

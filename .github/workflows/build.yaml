@@ -7,11 +7,6 @@ jobs:
   build:
     name: Build Firmware
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        desk_brand:
-          - uplift_v2
-          - fully_jarvis
     steps:
       - uses: actions/checkout@v2
 
@@ -25,10 +20,10 @@ jobs:
       - name: Compile Firmware
         working-directory: firmware
         run: |
-          esphome compile ${{ matrix.desk_brand }}.yaml
+          esphome compile config.yaml
           mkdir -p bin
-          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware-factory.bin bin/firmware-factory-${{ matrix.desk_brand }}.bin
-          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware.bin bin/firmware-${{ matrix.desk_brand }}.bin
+          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware-factory.bin bin/firmware-factory.bin
+          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware.bin bin/firmware.bin
 
       - name: Upload Firmware
         uses: skx/github-action-publish-binaries@release-1.3
