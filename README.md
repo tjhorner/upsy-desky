@@ -2,11 +2,9 @@
 
 This repository contains the source files for the Upsy Desky, a device which lets you connect your standing desk to any home automation system.
 
-I will be selling them on Tindie, but if you're seeing this, it isn't available for purchase yet. You can sign up [here](https://forms.gle/285GffmpfHamryEu6) to get notified as soon as it is available. I anticipate starting sales sometime during the week of August 29th.
+You can buy one on Tindie:
 
-<!-- You can buy one on Tindie:
-
-<a href="https://www.tindie.com/products/tjhorner/upsy-desky/?ref=offsite_badges&utm_source=sellers_tjhorner&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104"></a> -->
+<a href="https://www.tindie.com/products/tjhorner/upsy-desky/?ref=offsite_badges&utm_source=sellers_tjhorner&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104"></a>
 
 ## Repository Structure
 
