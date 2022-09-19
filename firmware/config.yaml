@@ -127,6 +127,6 @@ switch:
 
 light:
   - platform: status_led
-    id: status
+    id: upsy_desky_status_led
     pin: GPIO23
     restore_mode: ALWAYS_ON
