@@ -6,6 +6,10 @@ You can buy one on Tindie:
 
 <a href="https://www.tindie.com/products/tjhorner/upsy-desky/?ref=offsite_badges&utm_source=sellers_tjhorner&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104"></a>
 
+## Need Support?
+
+If you need help with your Upsy Desky, please email me at support@tjhorner.dev. It's a dedicated support email for Upsy Desky-related issues and will help me keep track of things and keep the GitHub issues free of clutter. Thanks!
+
 ## Repository Structure
 
 At the root of the repository you will find these directories:
