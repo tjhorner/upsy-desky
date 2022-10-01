@@ -17,13 +17,22 @@ jobs:
       - name: Install ESPHome
         run: pip install --user esphome
       
-      - name: Compile Firmware
+      - name: Compile Release Firmware
         working-directory: firmware
         run: |
           esphome compile config.yaml
           mkdir -p bin
           cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware-factory.bin bin/firmware-factory.bin
           cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware.bin bin/firmware.bin
+
+      - name: Compile Debug Firmware
+        working-directory: firmware
+        run: |
+          rm -rf .esphome/build/upsy-desky
+          esphome compile debug.yaml
+          mkdir -p bin
+          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware-factory.bin bin/debug-firmware-factory.bin
+          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware.bin bin/debug-firmware.bin
 
       - name: Upload Firmware
         uses: skx/github-action-publish-binaries@release-1.3
