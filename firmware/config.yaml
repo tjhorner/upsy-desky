@@ -27,7 +27,7 @@ esphome:
           data: [ 0x0 ]
   project:
     name: tj_horner.upsy_desky
-    version: "0.1.0"
+    version: "0.1.2"
 
 dashboard_import:
   package_import_url: github://tjhorner/upsy-desky/firmware/config.yaml
@@ -62,8 +62,8 @@ ota:
   password: ""
 
 packages:
-  standing_desk: github://tjhorner/esphome-standing-desk/configs/template.yaml
-  presets_addon: github://tjhorner/esphome-standing-desk/configs/addons/presets.yaml
+  standing_desk: github://tjhorner/esphome-standing-desk/configs/template.yaml@master
+  presets_addon: github://tjhorner/esphome-standing-desk/configs/addons/presets.yaml@master
 
 select:
   - platform: template
