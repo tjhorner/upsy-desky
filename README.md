@@ -8,7 +8,7 @@ You can buy one on Tindie:
 
 ## Need Support?
 
-If you need help with your Upsy Desky, please email me at support@tjhorner.dev. It's a dedicated support email for Upsy Desky-related issues and will help me keep track of things and keep the GitHub issues free of clutter. Thanks!
+If you need help with your Upsy Desky, please join the Upsy Desky [Discord server](https://discord.gg/ZHfXKQrSxF) where you can ask for help from the community and myself.
 
 ## Repository Structure
 
