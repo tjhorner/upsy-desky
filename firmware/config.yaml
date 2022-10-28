@@ -27,7 +27,7 @@ esphome:
           data: [ 0x0 ]
   project:
     name: tj_horner.upsy_desky
-    version: "0.1.2"
+    version: "0.2.0"
 
 dashboard_import:
   package_import_url: github://tjhorner/upsy-desky/firmware/config.yaml
@@ -121,7 +121,7 @@ number:
         lambda: |
           id(target_desk_height)->traits.set_max_value(x);
 
-switch:
+button:
   - platform: restart
     name: "${friendly_name} Restart"
 
