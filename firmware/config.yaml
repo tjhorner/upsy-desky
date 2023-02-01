@@ -27,7 +27,7 @@ esphome:
           data: [ 0x0 ]
   project:
     name: tj_horner.upsy_desky
-    version: "0.2.0"
+    version: "0.2.1"
 
 dashboard_import:
   package_import_url: github://tjhorner/upsy-desky/firmware/config.yaml
@@ -74,6 +74,7 @@ select:
     options:
       - uplift
       - jarvis
+      - omnidesk
     initial_option: ${standing_desk_variant}
     on_value:
       then:
