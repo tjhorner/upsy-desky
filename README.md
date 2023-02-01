@@ -53,7 +53,7 @@ Any standing desk that uses RJ45 to connect to the keypad is likely compatible, 
 
 ## Documentation
 
-You can find everything you need in the [GitHub wiki](https://github.com/tjhorner/upsy-desky/wiki/Getting-Started).
+You can find everything you need in the [documentation](https://upsy-desky.tjhorner.dev/docs/getting-started/).
 
 ## Licenses
 
