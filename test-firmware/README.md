@@ -1,6 +1,6 @@
 # Test Firmware
 
-This firmware is used to test assembled boards before shipping. In the future I'd like this process to be more automated but this is what I have for now.
+This firmware is used to test assembled boards before shipping. In the future I'd like this process to be more automated and comprehensive but this is what I have for now.
 
 ## Usage
 

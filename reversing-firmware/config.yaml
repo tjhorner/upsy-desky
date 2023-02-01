@@ -1,0 +1,50 @@
+substitutions:
+  name: "upsy-desky"
+
+esphome:
+  name: "${name}"
+  name_add_mac_suffix: true
+
+esp32:
+  board: esp32dev
+
+logger:
+  level: DEBUG
+
+# UART logging is from the perspective of the handset, i.e.:
+# - TX is the data sent from the handset to the control box
+# - RX is the data sent from the control box to the handset
+uart:
+  - # Direction: Handset -> Control Box
+    id: handset_tx
+    baud_rate: 9600
+    rx_pin: 17
+    debug: &uart_debug
+      direction: RX
+      dummy_receiver: true
+      after:
+        timeout: 50ms
+      sequence:
+        - lambda: UARTDebug::log_hex(uart::UART_DIRECTION_TX, bytes, ':');
+  - # Direction: Control Box -> Handset
+    id: handset_rx
+    baud_rate: 9600
+    rx_pin: 16
+    debug:
+      <<: *uart_debug
+      sequence:
+        - lambda: UARTDebug::log_hex(uart::UART_DIRECTION_RX, bytes, ':');
+
+wifi:
+  ap:
+    password: "hunter2hunter2"
+
+captive_portal:
+
+improv_serial:
+
+web_server:
+  port: 80
+
+ota:
+  password: ""
