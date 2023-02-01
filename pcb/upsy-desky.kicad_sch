@@ -4,6 +4,10 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Upsy Desky")
+  )
+
   (lib_symbols
     (symbol "A-2004-2-4-LPS-N-R:A-2004-2-4-LPS-N-R" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at -5.08 13.97 0)

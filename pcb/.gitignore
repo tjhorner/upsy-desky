@@ -29,3 +29,5 @@ fp-info-cache
 *.csv
 
 gerbers/
+
+*auto_saved_files*
