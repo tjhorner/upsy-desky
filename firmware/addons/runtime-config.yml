@@ -1,0 +1,56 @@
+select:
+  - platform: template
+    name: "${friendly_name} Height Decoder Variant"
+    entity_category: "config"
+    optimistic: true
+    restore_value: true
+    options:
+      - uplift
+      - jarvis
+      - omnidesk
+    initial_option: ${standing_desk_variant}
+    on_value:
+      then:
+        lambda: "id(desk_height)->set_decoder_variant(x);"
+  - platform: template
+    name: "${friendly_name} Height Units"
+    entity_category: "config"
+    optimistic: true
+    restore_value: true
+    options:
+      - in
+      - cm
+    initial_option: ${default_height_units}
+    on_value:
+      then:
+        lambda: |
+          id(desk_height)->set_unit_of_measurement(x);
+          id(target_desk_height)->traits.set_unit_of_measurement(x);
+
+number:
+  - platform: template
+    name: "${friendly_name} Min Target Height"
+    entity_category: "config"
+    min_value: 0
+    max_value: 150
+    step: 0.1
+    optimistic: true
+    restore_value: true
+    initial_value: ${standing_desk_min_height}
+    on_value:
+      then:
+        lambda: |
+          id(target_desk_height)->traits.set_min_value(x);
+  - platform: template
+    name: "${friendly_name} Max Target Height"
+    entity_category: "config"
+    min_value: 0
+    max_value: 150
+    step: 0.1
+    optimistic: true
+    restore_value: true
+    initial_value: ${standing_desk_max_height}
+    on_value:
+      then:
+        lambda: |
+          id(target_desk_height)->traits.set_max_value(x);
