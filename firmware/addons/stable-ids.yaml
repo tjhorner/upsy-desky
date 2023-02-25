@@ -20,16 +20,16 @@ button:
   - platform: copy
     source_id: recall_preset_1
     internal: true
-    name: "preset_1"
+    name: "desk_preset_1"
   - platform: copy
     source_id: recall_preset_2
     internal: true
-    name: "preset_2"
+    name: "desk_preset_2"
   - platform: copy
     source_id: recall_preset_3
     internal: true
-    name: "preset_3"
+    name: "desk_preset_3"
   - platform: copy
     source_id: recall_preset_4
     internal: true
-    name: "preset_4"
+    name: "desk_preset_4"
