@@ -21,3 +21,7 @@ web_server:
 
 ota:
   password: ""
+
+dashboard_import:
+  package_import_url: github://tjhorner/upsy-desky/firmware/base.yaml@v0.3.1
+  import_full_config: true
