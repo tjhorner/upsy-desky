@@ -1,0 +1,68 @@
+# Essential ESPHome config options
+esphome:
+  name: "${name}"
+  name_add_mac_suffix: true
+  on_boot:
+    then:
+      # Wakes up the desk and reports height
+      - uart.write:
+          id: handset_tx
+          data: [ 0x0 ]
+  project:
+    name: tj_horner.upsy_desky
+    version: "0.3.1"
+
+uart:
+  id: handset_tx
+  tx_pin: 16
+  baud_rate: 9600
+
+esp32:
+  board: esp32dev
+
+# Configurable options
+substitutions:
+  name: "upsy-desky"
+  friendly_name: "Upsy Desky"
+  desk_height_name: "${friendly_name} Desk Height"
+  target_desk_height_name: "${friendly_name} Target Desk Height"
+
+  # Standing Desk Component Config
+  standing_desk_uart_rx_pin: "17"
+  standing_desk_up_pin: "21"
+  standing_desk_down_pin: "22"
+  standing_desk_variant: "uplift"
+  standing_desk_min_height: "25.2"
+  standing_desk_max_height: "50.8"
+
+  # Presets Addon Config
+  button_bit1_pin: "21"
+  button_bit2_pin: "22"
+  button_bit4_pin: "19"
+  button_m_pin: "18"
+
+  # Runtime Config Defaults
+  default_height_units: "in" # Must be "in" or "cm"
+
+packages:
+  standing_desk: github://tjhorner/esphome-standing-desk/configs/template.yaml@master
+  addon_presets: !include addons/presets.yaml
+  addon_stable_ids: !include addons/stable-ids.yaml
+  addon_runtime_config: !include addons/runtime-config.yaml
+
+button:
+  - platform: restart
+    name: "${friendly_name} Restart"
+
+light:
+  - platform: status_led
+    id: upsy_desky_status_led
+    name: "${friendly_name} Status LED"
+    pin: GPIO23
+    restore_mode: RESTORE_DEFAULT_ON
+
+# Everything below this line is mostly for the benefit of the stock firmware
+# and the
+dashboard_import:
+  package_import_url: github://tjhorner/upsy-desky/firmware/base.yaml@v0.3.1
+  import_full_config: true

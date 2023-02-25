@@ -1,0 +1,35 @@
+# This file provides stable entity IDs for various components, in order to be used in the HTTP API.
+
+# ESPHome derives entity IDs (internally called "object IDs") from the component name, which is
+# used as the ID in the HTTP API endpoints. Unfortunately there is no way to control them so they
+# are set independently of the name, so this is a weird workaround for that.
+
+sensor:
+  - platform: copy
+    source_id: desk_height
+    internal: true
+    name: "desk_height"
+
+number:
+  - platform: copy
+    source_id: target_desk_height
+    internal: true
+    name: "target_desk_height"
+
+button:
+  - platform: copy
+    source_id: recall_preset_1
+    internal: true
+    name: "preset_1"
+  - platform: copy
+    source_id: recall_preset_2
+    internal: true
+    name: "preset_2"
+  - platform: copy
+    source_id: recall_preset_3
+    internal: true
+    name: "preset_3"
+  - platform: copy
+    source_id: recall_preset_4
+    internal: true
+    name: "preset_4"

@@ -1,5 +1,5 @@
 packages:
-  base: !include config.yaml
+  stock: !include stock.yaml
 
 logger:
   level: DEBUG
