@@ -1,6 +1,7 @@
 # Essential ESPHome config options
 esphome:
   name: "${name}"
+  friendly_name: "${friendly_name}"
   name_add_mac_suffix: true
   on_boot:
     then:
@@ -10,7 +11,7 @@ esphome:
           data: [ 0x0 ]
   project:
     name: tj_horner.upsy_desky
-    version: "0.3.1"
+    version: "0.4.0"
 
 uart:
   id: handset_tx
@@ -24,8 +25,8 @@ esp32:
 substitutions:
   name: "upsy-desky"
   friendly_name: "Upsy Desky"
-  desk_height_name: "${friendly_name} Desk Height"
-  target_desk_height_name: "${friendly_name} Target Desk Height"
+  desk_height_name: "Desk Height"
+  target_desk_height_name: "Target Desk Height"
 
   # Standing Desk Component Config
   standing_desk_uart_rx_pin: "17"
@@ -52,11 +53,11 @@ packages:
 
 button:
   - platform: restart
-    name: "${friendly_name} Restart"
+    name: "Restart"
 
 light:
   - platform: status_led
     id: upsy_desky_status_led
-    name: "${friendly_name} Status LED"
+    name: "Status LED"
     pin: GPIO23
     restore_mode: RESTORE_DEFAULT_ON

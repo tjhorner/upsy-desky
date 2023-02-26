@@ -1,6 +1,6 @@
 select:
   - platform: template
-    name: "${friendly_name} Height Decoder Variant"
+    name: "Height Decoder Variant"
     entity_category: "config"
     optimistic: true
     restore_value: true
@@ -13,7 +13,7 @@ select:
       then:
         lambda: "id(desk_height)->set_decoder_variant(x);"
   - platform: template
-    name: "${friendly_name} Height Units"
+    name: "Height Units"
     entity_category: "config"
     optimistic: true
     restore_value: true
@@ -29,7 +29,7 @@ select:
 
 number:
   - platform: template
-    name: "${friendly_name} Min Target Height"
+    name: "Min Target Height"
     entity_category: "config"
     min_value: 0
     max_value: 150
@@ -42,7 +42,7 @@ number:
         lambda: |
           id(target_desk_height)->traits.set_min_value(x);
   - platform: template
-    name: "${friendly_name} Max Target Height"
+    name: "Max Target Height"
     entity_category: "config"
     min_value: 0
     max_value: 150
