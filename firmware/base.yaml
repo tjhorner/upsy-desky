@@ -11,7 +11,7 @@ esphome:
           data: [ 0x0 ]
   project:
     name: tj_horner.upsy_desky
-    version: "0.4.0"
+    version: "0.4.1"
 
 uart:
   id: handset_tx
@@ -50,6 +50,7 @@ packages:
   addon_presets: !include addons/presets.yaml
   addon_stable_ids: !include addons/stable-ids.yaml
   addon_runtime_config: !include addons/runtime-config.yaml
+  addon_bluetooth_proxy: !include addons/bluetooth-proxy.yaml
 
 button:
   - platform: restart

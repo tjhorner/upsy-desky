@@ -14,3 +14,5 @@ Major parts of the config are separated into "addons" so they can be easily incl
 
 - `presets.yaml`: Adds support for recalling and setting presets on the desk control box
 - `runtime-config.yaml`: Adds support for runtime configuration options (you might want to remove this if you are configuring everything via ESPHome yaml)
+- `bluetooth-proxy.yaml`: Contains the necessary configuration to use the Upsy Desky as a [Bluetooth Proxy](https://esphome.io/components/bluetooth_proxy.html)
+- `stable-ids.yaml`: Contains configuration necessary to keep some entity IDs stable via the HTTP API
