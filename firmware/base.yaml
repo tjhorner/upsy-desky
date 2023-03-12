@@ -32,7 +32,6 @@ substitutions:
   standing_desk_uart_rx_pin: "17"
   standing_desk_up_pin: "21"
   standing_desk_down_pin: "22"
-  standing_desk_variant: "uplift"
   standing_desk_min_height: "25.2"
   standing_desk_max_height: "50.8"
 
@@ -46,7 +45,7 @@ substitutions:
   default_height_units: "in" # Must be "in" or "cm"
 
 packages:
-  standing_desk: github://tjhorner/esphome-standing-desk/configs/template.yaml@master
+  standing_desk: github://tjhorner/esphome-standing-desk/configs/template.yaml@auto-detection
   addon_presets: !include addons/presets.yaml
   addon_stable_ids: !include addons/stable-ids.yaml
   addon_runtime_config: !include addons/runtime-config.yaml

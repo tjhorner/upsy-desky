@@ -1,18 +1,5 @@
 select:
   - platform: template
-    name: "Height Decoder Variant"
-    entity_category: "config"
-    optimistic: true
-    restore_value: true
-    options:
-      - uplift
-      - jarvis
-      - omnidesk
-    initial_option: ${standing_desk_variant}
-    on_value:
-      then:
-        lambda: "id(desk_height)->set_decoder_variant(x);"
-  - platform: template
     name: "Height Units"
     entity_category: "config"
     optimistic: true
