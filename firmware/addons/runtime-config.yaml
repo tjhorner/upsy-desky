@@ -14,6 +14,17 @@ select:
           id(desk_height)->set_unit_of_measurement(x);
           id(target_desk_height)->traits.set_unit_of_measurement(x);
 
+button:
+  - platform: template
+    name: "Re-Detect Decoder"
+    entity_category: "config"
+    icon: "mdi:cog-refresh"
+    on_press:
+      - uart.write:
+          id: handset_tx
+          data: [ 0x0 ]
+      - standing_desk_height.detect_decoder: desk_height
+
 number:
   - platform: template
     name: "Min Target Height"
