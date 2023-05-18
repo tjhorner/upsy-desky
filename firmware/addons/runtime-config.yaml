@@ -11,8 +11,8 @@ select:
     on_value:
       then:
         lambda: |
-          id(desk_height)->set_unit_of_measurement(x);
-          id(target_desk_height)->traits.set_unit_of_measurement(x);
+          id(desk_height)->set_unit_of_measurement(x.c_str());
+          id(target_desk_height)->traits.set_unit_of_measurement(x.c_str());
 
 button:
   - platform: template
