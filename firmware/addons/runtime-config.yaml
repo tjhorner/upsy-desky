@@ -1,20 +1,17 @@
-# Temporarily removed due to a compatibility issue with ESPHome 2023.5
-# select:
-#   - platform: template
-#     name: "Height Units"
-#     entity_category: "config"
-#     optimistic: true
-#     restore_value: true
-#     options:
-#       - in
-#       - cm
-#     initial_option: ${default_height_units}
-#     on_value:
-#       then:
-#         lambda: |
-#           const char *unit = x.c_str();
-#           id(desk_height)->set_unit_of_measurement(unit);
-#           id(target_desk_height)->traits.set_unit_of_measurement(unit);
+select:
+  - platform: template
+    name: "Height Units"
+    entity_category: "config"
+    optimistic: true
+    restore_value: true
+    options:
+      - in
+      - cm
+    initial_option: ${default_height_units}
+    on_value:
+      then:
+        lambda: |
+          id(desk_height)->set_runtime_unit_of_measurement(x);
 
 button:
   - platform: template
