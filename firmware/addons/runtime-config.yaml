@@ -1,5 +1,6 @@
 select:
   - platform: template
+    id: height_units_config
     name: "Height Units"
     entity_category: "config"
     optimistic: true
@@ -11,7 +12,9 @@ select:
     on_value:
       then:
         lambda: |
-          id(desk_height)->set_runtime_unit_of_measurement(x);
+          const char *unit = id(height_units_config)->state.c_str();
+          id(desk_height)->set_unit_of_measurement(unit);
+          id(target_desk_height)->traits.set_unit_of_measurement(unit);
 
 button:
   - platform: template
