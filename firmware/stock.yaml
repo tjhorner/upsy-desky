@@ -13,7 +13,6 @@ captive_portal:
 improv_serial:
 
 api:
-  password: ""
   reboot_timeout: 0s
 
 web_server:

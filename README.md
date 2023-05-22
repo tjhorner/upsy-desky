@@ -46,10 +46,7 @@ Or whatever else you'd like. The possibilities are endless! As long as the possi
 
 ## Compatibility
 
-Any standing desk that uses RJ45 to connect to the keypad is likely compatible, but these brands of desks have been verified to work, with official firmware provided:
-
-- UPLIFT v2
-- Fully Jarvis
+Any standing desk that uses RJ45 to connect to the keypad is likely compatible, but the control boxes listed [here](https://upsy-desky.tjhorner.dev/docs/reference/compatibility/) are verified to be compatible.
 
 ## Documentation
 
