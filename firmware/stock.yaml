@@ -2,7 +2,7 @@ packages:
   base: !include base.yaml
 
 external_components:
-  - source: ./components
+  - source: github://tjhorner/upsy-desky@v1.1.1
     components: [ project_version ]
 
 text_sensor:
