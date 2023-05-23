@@ -2,7 +2,7 @@ packages:
   base: !include base.yaml
 
 external_components:
-  - source: github://tjhorner/upsy-desky@v1.1.1
+  - source: github://tjhorner/esphome-custom-components
     components: [ project_version ]
 
 text_sensor:
