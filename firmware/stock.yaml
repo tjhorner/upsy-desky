@@ -1,6 +1,15 @@
 packages:
   base: !include base.yaml
 
+external_components:
+  - source: ./components
+    components: [ project_version ]
+
+text_sensor:
+  - platform: project_version
+    name: "Upsy Desky Firmware Version"
+    internal: true
+
 logger:
   level: INFO
 
