@@ -26,9 +26,10 @@ api:
 
 web_server:
   port: 80
+  js_url: "https://upsy-desky.tjhorner.dev/esphome-webserver/www.js"
 
 ota:
   password: ""
 
 dashboard_import:
-  package_import_url: github://tjhorner/upsy-desky/firmware/stock.yaml@v1.1.0
+  package_import_url: github://tjhorner/upsy-desky/firmware/stock.yaml@v1.1.1
