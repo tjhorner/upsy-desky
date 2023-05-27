@@ -11,8 +11,14 @@ body:
       description: Please describe the bug you encountered, and what you expected to happen instead.
     validations:
       required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Please copy and paste any relevant log output.
+      render: plain text
   - type: input
-    id: version
+    id: config-version
     attributes:
       label: Which version of the Upsy Desky firmware config are you running?
       placeholder: "1.1.1"
@@ -23,12 +29,11 @@ body:
       options:
         - OTA Updates
         - ESPHome YAML Config
-  - type: textarea
-    id: logs
+  - type: input
+    id: esphome-version
     attributes:
-      label: Logs
-      description: Please copy and paste any relevant log output.
-      render: plain text
+      label: If you're using an ESPHome YAML config, which version of ESPHome are you running?
+      placeholder: "2023.5.4"
   - type: textarea
     id: esphome-config
     attributes:
