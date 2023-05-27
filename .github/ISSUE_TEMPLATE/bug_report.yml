@@ -15,7 +15,7 @@ body:
     id: logs
     attributes:
       label: Logs
-      description: Please copy and paste any relevant log output.
+      description: Please copy and paste any relevant log output. Learn how to obtain logs [here](https://upsy-desky.tjhorner.dev/docs/troubleshooting/#other-issues).
       render: plain text
   - type: input
     id: config-version
