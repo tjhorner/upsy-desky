@@ -4,6 +4,14 @@ labels: ["bug"]
 assignees:
   - tjhorner
 body:
+  - type: checkboxes
+    id: troubleshooting-followed
+    attributes:
+      label: Troubleshooting Guide
+      description: Please confirm you have followed the [troubleshooting guide](https://upsy-desky.tjhorner.dev/docs/troubleshooting).
+      options:
+        - label: I have followed the steps in the troubleshooting guide and my issue is either not listed or is not solved.
+          required: true
   - type: textarea
     id: description
     attributes:

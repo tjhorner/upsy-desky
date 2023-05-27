@@ -1,0 +1,40 @@
+name: Nightly Stock Firmware Build
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    name: Build Firmware
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Install ESPHome
+        run: pip install --user esphome
+      
+      - name: Compile Release Firmware
+        working-directory: firmware
+        run: |
+          esphome compile stock.yaml
+          mkdir -p bin
+          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware-factory.bin bin/firmware-factory.bin
+          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware.bin bin/firmware.bin
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: firmware-bin
+          path: firmware/bin
+
+      - name: Send Discord failure notification
+        if: failure()
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          color: "#FF6961"
+          message: "The latest nightly build failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
