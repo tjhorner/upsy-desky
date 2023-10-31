@@ -1,5 +1,6 @@
 packages:
   base: !include base.yaml
+  addon_bluetooth_proxy: !include addons/bluetooth-proxy.yaml
 
 external_components:
   - source: github://tjhorner/esphome-custom-components
@@ -20,6 +21,9 @@ wifi:
 captive_portal:
 
 improv_serial:
+
+esp32_improv:
+  authorizer: false
 
 api:
   reboot_timeout: 0s
