@@ -2,6 +2,9 @@ packages:
   base: !include base.yaml
   addon_bluetooth_proxy: !include addons/bluetooth-proxy.yaml
 
+substitutions:
+  bluetooth_proxy_active_connections: "false"
+
 external_components:
   - source: github://tjhorner/esphome-custom-components
     components: [ project_version ]

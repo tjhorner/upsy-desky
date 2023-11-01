@@ -1,4 +1,7 @@
+substitutions:
+  bluetooth_proxy_active_connections: "true"
+
 esp32_ble_tracker:
 
 bluetooth_proxy:
-  active: true
+  active: ${bluetooth_proxy_active_connections}
