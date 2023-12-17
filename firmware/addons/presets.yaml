@@ -2,22 +2,28 @@ output:
   - platform: gpio
     inverted: true
     id: button_bit1
-    pin: ${button_bit1_pin}
+    pin:
+      number: ${button_bit1_pin}
+      allow_other_uses: true
 
   - platform: gpio
     inverted: true
     id: button_bit2
-    pin: ${button_bit2_pin}
+    pin:
+      number: ${button_bit2_pin}
+      allow_other_uses: true
 
   - platform: gpio
     inverted: true
     id: button_bit4
-    pin: ${button_bit4_pin}
+    pin:
+      number: ${button_bit4_pin}
 
   - platform: gpio
     inverted: true
     id: button_m
-    pin: ${button_m_pin}
+    pin:
+      number: ${button_m_pin}
 
 button:
   # Recall Presets
