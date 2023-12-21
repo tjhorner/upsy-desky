@@ -12,7 +12,7 @@ esphome:
           data: [ 0x0 ]
   project:
     name: tj_horner.upsy_desky
-    version: "1.2.0"
+    version: "pre-esphome-2023.12"
 
 uart:
   id: handset_tx
@@ -46,7 +46,7 @@ substitutions:
   default_height_units: "in" # Must be "in" or "cm"
 
 packages:
-  standing_desk: github://tjhorner/esphome-standing-desk/configs/template.yaml
+  standing_desk: github://tjhorner/esphome-standing-desk/configs/template.yaml@pre-esphome-2023.12
   addon_presets: !include addons/presets.yaml
   addon_stable_ids: !include addons/stable-ids.yaml
   addon_runtime_config: !include addons/runtime-config.yaml
