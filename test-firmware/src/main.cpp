@@ -26,7 +26,7 @@ void setup() {
 
   digitalWrite(LED_BUILTIN, HIGH);
 
-  delay(100);
+  delay(200);
 
   for (int &pin : pins_to_test) {
     Serial.print("Waiting for pin ");
@@ -41,6 +41,8 @@ void setup() {
     delay(100);
     digitalWrite(LED_BUILTIN, HIGH);
   }
+
+  digitalWrite(LED_BUILTIN, LOW);
 #else
   digitalWrite(LED_BUILTIN, HIGH);
 
@@ -61,7 +63,7 @@ void loop() {
     Serial.println();
 
     digitalWrite(pin, HIGH);
-    delay(1000);
+    delay(300);
     digitalWrite(pin, LOW);
   }
 #endif
