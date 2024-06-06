@@ -1,9 +1,5 @@
 packages:
   base: !include base.yaml
-  addon_bluetooth_proxy: !include addons/bluetooth-proxy.yaml
-
-substitutions:
-  bluetooth_proxy_active_connections: "false"
 
 external_components:
   - source: github://tjhorner/esphome-custom-components
@@ -33,10 +29,11 @@ api:
 
 web_server:
   port: 80
+  version: 2
   js_url: "https://upsy-desky.tjhorner.dev/esphome-webserver/www.js"
 
 ota:
   password: ""
 
 dashboard_import:
-  package_import_url: github://tjhorner/upsy-desky/firmware/stock.yaml@v2.0.0
+  package_import_url: github://tjhorner/upsy-desky/firmware/stock.yaml@v3.0.0
