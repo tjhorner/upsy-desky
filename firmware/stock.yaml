@@ -33,7 +33,8 @@ web_server:
   js_url: "https://upsy-desky.tjhorner.dev/esphome-webserver/www.js"
 
 ota:
-  password: ""
+  - platform: esphome
+    password: ""
 
 dashboard_import:
   package_import_url: github://tjhorner/upsy-desky/firmware/stock.yaml@v3.0.0
