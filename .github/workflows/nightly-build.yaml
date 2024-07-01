@@ -22,7 +22,7 @@ jobs:
         run: |
           esphome compile stock.yaml
           mkdir -p bin
-          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware-factory.bin bin/firmware.factory.bin
+          cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware.factory.bin bin/firmware-factory.bin
           cp .esphome/build/upsy-desky/.pioenvs/upsy-desky/firmware.bin bin/firmware.bin
 
       - uses: actions/upload-artifact@v3
