@@ -1496,6 +1496,187 @@
 				)
 			)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(arc
+					(start -0.254 1.016)
+					(mid -1.2656 0)
+					(end -0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 1.016)
+					(mid -1.2656 0)
+					(end -0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 -1.016)
+					(mid 1.2656 0)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 -1.016)
+					(mid 1.2656 0)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sensor_Distance:VL53L0CXV0DH1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1793,11 +1974,11 @@
 				)
 			)
 		)
-		(symbol "VBUS_1"
+		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1810,8 +1991,8 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "VBUS_1"
-				(at 0 3.81 0)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1836,7 +2017,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1854,7 +2035,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "VBUS_1_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1892,11 +2073,11 @@
 					)
 				)
 			)
-			(symbol "VBUS_1_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "VBUS"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2294,7 +2475,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 137.16) (xy 137.16 137.16)
+			(xy 115.57 137.16) (xy 125.73 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2344,7 +2525,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 142.24) (xy 137.16 142.24)
+			(xy 115.57 142.24) (xy 125.73 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2364,7 +2545,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 149.86) (xy 116.84 152.4)
+			(xy 105.41 149.86) (xy 105.41 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2534,7 +2715,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 129.54) (xy 137.16 129.54)
+			(xy 115.57 129.54) (xy 125.73 129.54)
 		)
 		(stroke
 			(width 0)
@@ -2574,7 +2755,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 123.19) (xy 128.27 134.62)
+			(xy 116.84 123.19) (xy 116.84 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2594,7 +2775,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 127) (xy 137.16 127)
+			(xy 115.57 127) (xy 125.73 127)
 		)
 		(stroke
 			(width 0)
@@ -2734,7 +2915,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 132.08) (xy 137.16 132.08)
+			(xy 115.57 132.08) (xy 125.73 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2774,7 +2955,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 139.7) (xy 128.27 139.7)
+			(xy 115.57 139.7) (xy 116.84 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2784,7 +2965,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 139.7) (xy 128.27 152.4)
+			(xy 116.84 139.7) (xy 116.84 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2824,7 +3005,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 144.78) (xy 137.16 144.78)
+			(xy 115.57 144.78) (xy 125.73 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2904,7 +3085,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 134.62) (xy 128.27 134.62)
+			(xy 115.57 134.62) (xy 116.84 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2925,7 +3106,7 @@
 		(uuid 276019ff-6b32-4351-8f38-92150ee09036)
 	)
 	(rectangle
-		(start 87.63 64.77)
+		(start 86.36 64.77)
 		(end 193.04 111.76)
 		(stroke
 			(width 0)
@@ -2981,83 +3162,6 @@
 		)
 		(uuid "cead6e67-c262-4468-abe3-565ead7f7ce2")
 	)
-	(label "DESK_6"
-		(at 171.45 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0b5859f5-8288-4855-9207-4edcb0e6fc1d")
-	)
-	(label "DESK_8"
-		(at 171.45 127 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2a2125c7-156b-4dc3-b1c8-8fc3879533bd")
-	)
-	(label "DESK_4"
-		(at 171.45 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2ef1159a-d2ac-4828-8832-615fa44bee12")
-	)
-	(label "SDA"
-		(at 92.71 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3862db2e-4504-4a94-a8fa-135dde9c5331")
-	)
-	(label "DESK_2"
-		(at 137.16 142.24 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6759ea6d-c34e-4ab9-ade4-183dae5aa4f6")
-	)
-	(label "DESK_1"
-		(at 171.45 144.78 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6b92763b-2347-4a8c-8b0c-978ad990e348")
-	)
-	(label "DESK_4"
-		(at 137.16 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6c755598-225d-4f02-8dc3-aa6e91b30c9b")
-	)
 	(label "GPIO1"
 		(at 113.03 97.79 0)
 		(fields_autoplaced yes)
@@ -3068,17 +3172,6 @@
 			(justify left bottom)
 		)
 		(uuid "72407c80-e27b-4cf0-aa64-6cefe42f8827")
-	)
-	(label "DESK_6"
-		(at 137.16 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "76838636-40c2-42ce-a2c0-a34f8f29061f")
 	)
 	(label "INT"
 		(at 128.27 85.09 0)
@@ -3091,72 +3184,6 @@
 		)
 		(uuid "800909ec-5faa-4b80-8f1c-4648b03ffd7e")
 	)
-	(label "DESK_2"
-		(at 171.45 142.24 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "87010d2f-aa43-43cc-aa99-aafe6fd4bd72")
-	)
-	(label "DESK_8"
-		(at 137.16 127 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "92e3bb18-d09b-47ad-939b-47082fa2e9a7")
-	)
-	(label "DESK_7"
-		(at 137.16 129.54 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c0e3c88f-0a27-4312-b282-c41218dffb90")
-	)
-	(label "DESK_1"
-		(at 137.16 144.78 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c4a15cbe-e323-43e4-adf9-19d2a959c039")
-	)
-	(label "LED_RGB"
-		(at 149.86 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d10cf334-09c1-46ae-92d4-9c6a3f8de3ee")
-	)
-	(label "SCL"
-		(at 92.71 92.71 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e25464f5-3a97-4ac5-b22d-c283e40e7131")
-	)
 	(label "GPIO0"
 		(at 113.03 85.09 0)
 		(fields_autoplaced yes)
@@ -3168,16 +3195,185 @@
 		)
 		(uuid "f6ac33a4-4694-4792-a225-c83e345c2e8c")
 	)
-	(label "DESK_7"
-		(at 171.45 129.54 180)
+	(hierarchical_label "DESK_2"
+		(shape input)
+		(at 171.45 142.24 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "fd94810d-b505-41d5-a5c5-88858194eb99")
+		(uuid "1d868303-b93d-47fa-9cb9-5d0eb1e95a7c")
+	)
+	(hierarchical_label "DESK_1"
+		(shape input)
+		(at 125.73 144.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "28c5be78-cc1f-4ed1-8cab-9a2b8de84ad8")
+	)
+	(hierarchical_label "DESK_7"
+		(shape input)
+		(at 125.73 129.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2e982e4e-ce7c-4e0b-8af6-c04069479c67")
+	)
+	(hierarchical_label "DESK_4"
+		(shape input)
+		(at 125.73 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "42c0e933-dc0f-43c0-99a6-5c733d882e4f")
+	)
+	(hierarchical_label "LED_RGB"
+		(shape input)
+		(at 149.86 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6811006e-f4c5-4625-a3bf-03406e3a3c37")
+	)
+	(hierarchical_label "DESK_8"
+		(shape input)
+		(at 125.73 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "82c24603-cd28-4986-ad62-fae4c883d8fa")
+	)
+	(hierarchical_label "DESK_8"
+		(shape input)
+		(at 171.45 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93808391-4729-425d-88bb-68b7c47a2fa9")
+	)
+	(hierarchical_label "DESK_4"
+		(shape input)
+		(at 171.45 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "94a921a5-1d88-43f6-873c-658ee8ea2574")
+	)
+	(hierarchical_label "DESK_6"
+		(shape input)
+		(at 125.73 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab6097ca-65b0-4cf3-86ed-804cbbe7e238")
+	)
+	(hierarchical_label "DESK_1"
+		(shape input)
+		(at 171.45 144.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b378427c-e059-4476-b88a-f15e81af919b")
+	)
+	(hierarchical_label "DESK_2"
+		(shape input)
+		(at 125.73 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bea3267c-62ee-452d-a4ee-a16eb0706d0b")
+	)
+	(hierarchical_label "SDA"
+		(shape input)
+		(at 92.71 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ca6c2a6f-98ba-40a6-9684-d377cfc57a8b")
+	)
+	(hierarchical_label "DESK_6"
+		(shape input)
+		(at 171.45 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d98174fb-dd03-4686-a8a9-6dd4b0fc1e41")
+	)
+	(hierarchical_label "DESK_7"
+		(shape input)
+		(at 171.45 129.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "daf1346d-9ed0-4922-ab03-1a67b73b7e1e")
+	)
+	(hierarchical_label "SCL"
+		(shape input)
+		(at 92.71 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e9423085-e8d0-4f39-9c31-d41c7c8b777b")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3250,7 +3446,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 128.27 123.19 0)
+		(at 116.84 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3259,7 +3455,7 @@
 		(fields_autoplaced yes)
 		(uuid "12d586d8-0f45-45ac-93b9-2f0b11b5e8fb")
 		(property "Reference" "#PWR044"
-			(at 128.27 127 0)
+			(at 116.84 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3268,7 +3464,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 128.27 118.11 0)
+			(at 116.84 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3276,7 +3472,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 123.19 0)
+			(at 116.84 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3285,7 +3481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 123.19 0)
+			(at 116.84 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3294,7 +3490,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 123.19 0)
+			(at 116.84 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3453,7 +3649,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 128.27 152.4 0)
+		(at 116.84 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3462,7 +3658,7 @@
 		(fields_autoplaced yes)
 		(uuid "359b7b53-f2cb-4318-8a4d-031310211cf9")
 		(property "Reference" "#PWR045"
-			(at 128.27 158.75 0)
+			(at 116.84 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3471,7 +3667,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 157.48 0)
+			(at 116.84 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3479,7 +3675,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 152.4 0)
+			(at 116.84 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3488,7 +3684,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 152.4 0)
+			(at 116.84 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3497,7 +3693,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 152.4 0)
+			(at 116.84 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3651,7 +3847,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 152.4 0)
+		(at 105.41 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3660,7 +3856,7 @@
 		(fields_autoplaced yes)
 		(uuid "55f70e03-494d-422b-8aa3-c31f57f6423d")
 		(property "Reference" "#PWR043"
-			(at 116.84 158.75 0)
+			(at 105.41 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3669,7 +3865,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 157.48 0)
+			(at 105.41 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,7 +3873,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 152.4 0)
+			(at 105.41 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3686,7 +3882,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 152.4 0)
+			(at 105.41 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3695,7 +3891,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 152.4 0)
+			(at 105.41 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3710,6 +3906,73 @@
 			(project "upsy-desky"
 				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 124.46 85.09 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c4436de-663b-4e60-b7db-c7877bbd31d9")
+		(property "Reference" "JP3"
+			(at 122.936 82.296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 119.634 74.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 124.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a2ad1819-7fdd-4a08-bc8e-0e1a2aeeeaec")
+		)
+		(pin "1"
+			(uuid "cff0cb5e-8d20-45f9-8c05-adfac8f92a0d")
+		)
+		(instances
+			(project "upsy-desky"
+				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -3780,74 +4043,6 @@
 			(project "upsy-desky"
 				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 124.46 97.79 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "7f7d0f4f-0c1e-432d-8ca7-8393bc4a390d")
-		(property "Reference" "R19"
-			(at 124.46 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 124.46 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 124.46 99.568 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b502dde-41ae-43ca-9f0e-c8b4ea4d9f64")
-		)
-		(pin "2"
-			(uuid "032e2f4b-f36f-4ded-9cb9-9f6754e544db")
-		)
-		(instances
-			(project "upsy-desky"
-				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
-					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -4010,7 +4205,7 @@
 	)
 	(symbol
 		(lib_id "Connector:RJ45_Shielded")
-		(at 116.84 137.16 0)
+		(at 105.41 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4019,7 +4214,7 @@
 		(fields_autoplaced yes)
 		(uuid "98508eb1-ce54-41d5-b5a4-4c656cf08058")
 		(property "Reference" "J8"
-			(at 116.84 119.38 0)
+			(at 105.41 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4027,7 +4222,7 @@
 			)
 		)
 		(property "Value" "RJ45_Shielded"
-			(at 116.84 121.92 0)
+			(at 105.41 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4035,7 +4230,7 @@
 			)
 		)
 		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
-			(at 116.84 136.525 90)
+			(at 105.41 136.525 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4044,7 +4239,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 136.525 90)
+			(at 105.41 136.525 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4053,7 +4248,7 @@
 			)
 		)
 		(property "Description" "RJ connector, 8P8C (8 positions 8 connected), Shielded"
-			(at 116.84 137.16 0)
+			(at 105.41 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4092,74 +4287,6 @@
 			(project "upsy-desky"
 				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
 					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 124.46 85.09 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "99a29de5-3d32-448c-ac1e-6deaee23b563")
-		(property "Reference" "R18"
-			(at 124.46 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 124.46 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 124.46 83.312 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "35622f11-29c8-49d6-b134-af85a1203cc5")
-		)
-		(pin "2"
-			(uuid "04b10534-b073-4689-b221-6b10940eff24")
-		)
-		(instances
-			(project "upsy-desky"
-				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
-					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -4226,6 +4353,72 @@
 			(project "upsy-desky"
 				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 140.97 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2c6782f-e0c9-41ad-a0fc-890e421b5808")
+		(property "Reference" "#PWR030"
+			(at 140.97 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 140.97 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 140.97 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08781614-dac5-4dc6-9e3d-034247683188")
+		)
+		(instances
+			(project "upsy-desky"
+				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -4500,73 +4693,6 @@
 			(project "upsy-desky"
 				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "VBUS_1")
-		(lib_id "power:VBUS")
-		(at 140.97 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8284990-e230-4f4d-b648-fccfae41fc49")
-		(property "Reference" "#PWR030"
-			(at 140.97 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 140.97 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 140.97 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d567cfa-b48e-4926-8a64-484293b5f62f")
-		)
-		(instances
-			(project "upsy-desky"
-				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
-					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -4935,6 +5061,74 @@
 			(project "upsy-desky"
 				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
 					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 124.46 97.79 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0d58d40-93cf-48c0-a1ef-a0c12d31d4b0")
+		(property "Reference" "JP4"
+			(at 127 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 130.556 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 124.46 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c754c814-9a87-433a-ab5b-111245f604c5")
+		)
+		(pin "2"
+			(uuid "44648829-9e55-4ab4-afad-bf93edb82533")
+		)
+		(instances
+			(project "upsy-desky"
+				(path "/f40a33af-1f02-482d-8827-6bd150214691/f696a190-c741-41c3-b046-4f0283478b7d"
+					(reference "JP4")
 					(unit 1)
 				)
 			)
