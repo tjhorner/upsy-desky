@@ -1,0 +1,523 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "f40a33af-1f02-482d-8827-6bd150214691")
+	(paper "A4")
+	(title_block
+		(title "(Risky) Upsy Desky")
+		(date "2023-12-25")
+		(rev "v2.0")
+		(company "Petr Hodina")
+	)
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 167.64 93.98) (xy 181.61 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00c3de28-028f-4f2d-aeb9-f3bf1010c73e")
+	)
+	(wire
+		(pts
+			(xy 116.84 90.17) (xy 129.54 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e88c9a8-44fb-49c6-b475-ac2bb27dc767")
+	)
+	(wire
+		(pts
+			(xy 167.64 83.82) (xy 181.61 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "221e8a69-4e9d-42b9-a737-2ddaadf2b7eb")
+	)
+	(wire
+		(pts
+			(xy 167.64 76.2) (xy 181.61 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a6ed1fa-f3b0-49a4-a298-31b6b20e3561")
+	)
+	(wire
+		(pts
+			(xy 116.84 80.01) (xy 129.54 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "551669d9-2838-49ba-92aa-f5c12b18c788")
+	)
+	(wire
+		(pts
+			(xy 167.64 73.66) (xy 181.61 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56bdc3d1-22e7-4790-b1d8-d2c1e2e06e47")
+	)
+	(wire
+		(pts
+			(xy 167.64 97.79) (xy 181.61 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e43d4ab-bcfb-4593-9b01-6d22317510bf")
+	)
+	(wire
+		(pts
+			(xy 167.64 91.44) (xy 181.61 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dfe4e15-83a1-4010-a83d-b493ee5c399d")
+	)
+	(wire
+		(pts
+			(xy 167.64 86.36) (xy 181.61 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9164995b-47b3-43f5-bc6b-14ff4271a275")
+	)
+	(wire
+		(pts
+			(xy 116.84 82.55) (xy 129.54 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b0e3c87-1c98-4a76-9920-66bac56ae484")
+	)
+	(wire
+		(pts
+			(xy 167.64 78.74) (xy 181.61 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c969dec6-78c4-47d0-b664-6f697109a1d7")
+	)
+	(wire
+		(pts
+			(xy 116.84 87.63) (xy 129.54 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6d49099-e4db-4c19-b817-4d1e6f3f7360")
+	)
+	(wire
+		(pts
+			(xy 167.64 81.28) (xy 181.61 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0485822-5be1-42d6-83cf-d783c25d1f1f")
+	)
+	(sheet
+		(at 129.54 59.69)
+		(size 38.1 60.96)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "79ea472d-c7d2-413f-8d99-2980c7305b98")
+		(property "Sheetname" "esp32c3"
+			(at 129.54 58.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "esp32c3.kicad_sch"
+			(at 129.54 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DESK_6" input
+			(at 167.64 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "eee7d763-d278-404f-81d3-2de0f8599944")
+		)
+		(pin "DBG_TX" input
+			(at 129.54 90.17 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1d72069c-5389-4566-9328-838cc4e93b74")
+		)
+		(pin "USB_DN" input
+			(at 129.54 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "daf60b37-8b55-4808-ba22-17f92add92c6")
+		)
+		(pin "DBG_RX" input
+			(at 129.54 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e44eb332-92dc-4bc0-bd3c-dd1848fc7aab")
+		)
+		(pin "USB_DP" input
+			(at 129.54 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f3c473f1-0db0-419d-8a43-c979d06fc018")
+		)
+		(pin "LED_RGB" input
+			(at 167.64 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "12dd5024-f8fe-4ac0-8e46-26f78ead21b2")
+		)
+		(pin "SDA" input
+			(at 167.64 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "76e11b0e-3ed1-490e-b31b-ba33dbb36678")
+		)
+		(pin "SCL" input
+			(at 167.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3841be3a-3bb5-4834-98d3-4053a7c393f7")
+		)
+		(pin "DESK_4" input
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b66f8ef7-1fec-431f-b5e7-6a048a16b6b4")
+		)
+		(pin "DESK_2" input
+			(at 167.64 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cf6b84b5-cb58-4459-86c3-140296886a41")
+		)
+		(pin "DESK_1" input
+			(at 167.64 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "778f7e89-c8ec-4fe4-ae99-ae9790896e63")
+		)
+		(pin "DESK_8" input
+			(at 167.64 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "01f6639e-a60c-4ce6-9706-1c8c0c0617d4")
+		)
+		(pin "DESK_7" input
+			(at 167.64 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2e86b46e-f314-4509-ac53-dc9aa60f0fd7")
+		)
+		(instances
+			(project "upsy-desky"
+				(path "/f40a33af-1f02-482d-8827-6bd150214691"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 78.74 59.69)
+		(size 38.1 60.96)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "ae97366b-e9ed-45e6-a1ec-2ec9676aa61d")
+		(property "Sheetname" "usb"
+			(at 78.74 58.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 78.74 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_DN" input
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "715e9245-6730-4c6e-a5e1-31818880937b")
+		)
+		(pin "USB_DP" input
+			(at 116.84 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3a4d74a2-7935-4fd6-9153-5ddfb970b097")
+		)
+		(pin "DBG_TX" input
+			(at 116.84 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4c55d58f-94c5-4644-88c8-abbb4a142d00")
+		)
+		(pin "DBG_RX" input
+			(at 116.84 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "df7963b3-f2af-4059-aaf5-ea1a27d21599")
+		)
+		(instances
+			(project "upsy-desky"
+				(path "/f40a33af-1f02-482d-8827-6bd150214691"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 181.61 59.69)
+		(size 38.1 60.96)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "f696a190-c741-41c3-b046-4f0283478b7d")
+		(property "Sheetname" "connectors"
+			(at 181.61 58.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connectors.kicad_sch"
+			(at 181.61 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SCL" input
+			(at 181.61 91.44 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4b17382f-e514-4094-9647-eb1f492fe794")
+		)
+		(pin "SDA" input
+			(at 181.61 93.98 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "351d4993-dd29-4f68-861f-efbe3d30cc66")
+		)
+		(pin "DESK_4" input
+			(at 181.61 81.28 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d1cdbb14-739e-42c6-a80e-d6262fbc8138")
+		)
+		(pin "DESK_2" input
+			(at 181.61 83.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "774db9cf-fad2-4e7b-b104-bdf2dfc96682")
+		)
+		(pin "DESK_8" input
+			(at 181.61 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "023e7fef-95f6-40a8-8eb5-7d3cfcbf87f5")
+		)
+		(pin "DESK_6" input
+			(at 181.61 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "48a3163a-a473-4c2c-99fd-642a2e0b0032")
+		)
+		(pin "DESK_7" input
+			(at 181.61 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3de7e919-8322-4286-98c5-4bec0ff7b2c4")
+		)
+		(pin "DESK_1" input
+			(at 181.61 86.36 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d2fba740-667e-474b-9d79-43339fad928f")
+		)
+		(pin "LED_RGB" input
+			(at 181.61 97.79 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "477b32ae-cfe5-4150-8658-fa24185ef351")
+		)
+		(instances
+			(project "upsy-desky"
+				(path "/f40a33af-1f02-482d-8827-6bd150214691"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
