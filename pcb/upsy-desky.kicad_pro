@@ -60,7 +60,6 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|159618001|75057000|1727399f-28b5-4a4d-83ce-8809fe9cdec4|7f7682d1-a5f5-4493-8e01-c35882b526c9",
         "items_not_allowed|163068000|75057000|41456f29-a703-4d12-85d0-c21ea7c0a452|00000000-0000-0000-0000-000000000000",
         "items_not_allowed|163068000|75057000|7f7682d1-a5f5-4493-8e01-c35882b526c9|00000000-0000-0000-0000-000000000000"
       ],
@@ -493,8 +492,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "../../../../Applications/KiCad/KiCad.app/Contents/Applications/",
-      "plot": "",
-      "pos_files": "",
+      "plot": "gerbers",
+      "pos_files": "gerbers",
       "specctra_dsn": "",
       "step": "upsy-desky.step",
       "svg": "",
