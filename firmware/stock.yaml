@@ -22,7 +22,7 @@ captive_portal:
 improv_serial:
 
 esp32_improv:
-  authorizer: false
+  authorizer: none
 
 api:
   reboot_timeout: 0s
@@ -37,4 +37,4 @@ ota:
     password: ""
 
 dashboard_import:
-  package_import_url: github://tjhorner/upsy-desky/firmware/stock.yaml@v4.0.1
+  package_import_url: github://tjhorner/upsy-desky/firmware/stock.yaml@v4.0.2
