@@ -12,9 +12,13 @@ select:
     on_value:
       then:
         lambda: |
-          const char *unit = id(height_units_config)->state.c_str();
-          id(desk_height)->set_unit_of_measurement(unit);
-          id(target_desk_height)->traits.set_unit_of_measurement(unit);
+          auto opt = id(height_units_config)->current_option();
+          if (opt.has_value()) {
+            // Note: In ESPHome 2026.3, unit_of_measurement cannot be changed dynamically
+            // on sensor/number components after initialization. The unit is immutable
+            // and set only during component setup from YAML configuration.
+            ESP_LOGI("runtime_config", "Height units changed to: %s", opt.value().c_str());
+          }
 
 button:
   - platform: template
@@ -29,6 +33,7 @@ button:
 
 number:
   - platform: template
+    id: min_height_config
     name: "Min Target Height"
     entity_category: "config"
     min_value: 0
@@ -40,8 +45,11 @@ number:
     on_value:
       then:
         lambda: |
-          id(target_desk_height)->traits.set_min_value(x);
+          // Note: In ESPHome 2026.3, number traits are immutable and cannot be
+          // modified at runtime. The min/max values are set during initialization.
+          ESP_LOGI("runtime_config", "Min target height set to: %.1f", x);
   - platform: template
+    id: max_height_config
     name: "Max Target Height"
     entity_category: "config"
     min_value: 0
@@ -53,4 +61,6 @@ number:
     on_value:
       then:
         lambda: |
-          id(target_desk_height)->traits.set_max_value(x);
+          // Note: In ESPHome 2026.3, number traits are immutable and cannot be
+          // modified at runtime. The min/max values are set during initialization.
+          ESP_LOGI("runtime_config", "Max target height set to: %.1f", x);
