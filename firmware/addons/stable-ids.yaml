@@ -9,6 +9,10 @@ sensor:
     source_id: desk_height
     internal: true
     name: "desk_height"
+  - platform: copy
+    source_id: desk_height_cm
+    internal: true
+    name: "desk_height_cm"
 
 number:
   - platform: copy

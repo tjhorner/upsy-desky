@@ -9,6 +9,16 @@ select:
       - in
       - cm
     initial_option: ${default_height_units}
+
+sensor:
+  - platform: copy
+    source_id: desk_height
+    id: desk_height_cm
+    name: "Desk Height (cm)"
+    unit_of_measurement: "cm"
+    filters:
+      - multiply: 2.54
+
 button:
   - platform: template
     name: "Re-Detect Decoder"
