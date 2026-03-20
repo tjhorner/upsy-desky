@@ -12,7 +12,7 @@ esphome:
           data: [ 0x0 ]
   project:
     name: tj_horner.upsy_desky
-    version: "4.0.2"
+    version: ${project_version}
 
 uart:
   id: handset_tx
@@ -28,6 +28,7 @@ esp32:
 substitutions:
   name: "upsy-desky"
   friendly_name: "Upsy Desky"
+  project_version: "dev"
   desk_height_name: "Desk Height"
   target_desk_height_name: "Target Desk Height"
 
