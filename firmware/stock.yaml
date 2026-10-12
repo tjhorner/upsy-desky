@@ -7,7 +7,7 @@ external_components:
 
 text_sensor:
   - platform: project_version
-    name: "Upsy Desky Firmware Version"
+    name: "upsy_desky_firmware_version"
     internal: true
 
 logger:
@@ -37,4 +37,4 @@ ota:
     password: ""
 
 dashboard_import:
-  package_import_url: github://tjhorner/upsy-desky/firmware/stock.yaml@v4.0.2
+  package_import_url: github://tjhorner/upsy-desky/firmware/stock.yaml@master
